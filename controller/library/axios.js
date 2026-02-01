@@ -13,7 +13,7 @@ function getAxiosInstance() {
       });
     },
     post(method, data) {
-      console.log("Full URL:", BASE_URL + "/" + method);
+      console.log("Full URL:", BASE_URL + method);
       return axios({
         method: "post",
         baseURL: BASE_URL,

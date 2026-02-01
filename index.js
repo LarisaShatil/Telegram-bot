@@ -7,11 +7,11 @@ const app = express();
 app.use(express.json());
 
 
-app.get("/", async (req, res) => {
+app.get(["/", "/test", "/gtoken", "/get-access-token"], async (req, res) => {
   res.send(await handler(req));
 });
+
 app.post("/", async (req, res) => {
-  console.log("Received a message from Telegram!", req.body);
   res.send(await handler(req));
 });
 

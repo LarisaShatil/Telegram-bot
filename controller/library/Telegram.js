@@ -11,6 +11,7 @@ function handleMessage(messageObj) {
 
   if (messageText.charAt(0) === "/") {
     const command = messageText.substr(1);
+    console.log("COMMAND: ->", command);
     switch (command) {
       case "start":
         return sendMessage(messageObj, "Hi! I'm a bot. Let' start");
