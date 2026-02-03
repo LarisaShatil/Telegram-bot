@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 
-app.get(["/", "/test", "/gtoken", "/get-access-token"], async (req, res) => {
+app.get(["/", "/test", "/test-2","/gtoken", "/get-access-token"], async (req, res) => {
   res.send(await handler(req));
 });
 
